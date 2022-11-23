@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade Formulário S1-18</title>
+  <style>
+    body {
+      margin: 0;
+      padding: auto;
+      background-color: #e5e5e5;
+    }
+
+    h3 {
+      margin: 0;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      background-color: blue;
+      color: #e5e5e5;
+      font-size: 16px;
+    }
+
+    label {
+      font-size: 16px;
+      font-weight: 600;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .field {
+      padding: 8px 8px;
+    }
+
+    #form {
+      margin: 20px;
+      padding: 30px 20px;
+      background-color: aliceblue;
+      max-width: 300px;
+      border-radius: 15px;
+    }
+
+    .campos {
+      padding-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="form">
+    <h3>Formulário Kenzie</h3>
+    <form>
+      <div class="campos">
+        <label for="">Seu nome</label><br>
+        <input type="text" class="field" placeholder="Digite seu nome aqui..." required />
+      </div>
+      <div class="campos">
+        <label for="">Seu melhor e-mail</label><br>
+        <input type="email" class="field" required placeholder="Digite seu email aqui..." />
+      </div>
+      <div class="campos">
+        <label for="motivacao">Descrição</label><br>
+        <textarea name="motivacao" id="motivacao" class="field" cols="30" rows="5" placeholder="Fale mais sobre você"></textarea>
+      </div>
+      <div class="campos">
+        <label for="modulo">Módulo</label><br>
+        <select name="" id="">
+          <option value="">Selecione seu Módulo</option>
+          <option value="modulo1">Módulo 1</option>
+          <option value="modulo2">Módulo 2</option>
+          <option value="modulo3">Módulo 3</option>
+          <option value="modulo4">Módulo 4</option>
+        </select>
+      </div>
+      <div class="campos">
+        <label for="">Senha</label><br>
+        <input type="password" class="field" placeholder="Digite sua senha aqui..." />
+      </div>
+      <div class="campos">
+        <label for="">Confirmar senha</label><br>
+        <input type="password" class="field" placeholder="Digite sua senha novamente..." />
+      </div>
+      <div class="campos">
+        <label for="">Deseja receber novidades em seu email?</label><br>
+        <label for="sim">Sim</label>
+        <input type="radio" name="flightOptions" value="Latam" />
+        <label for="nao">Não</label>
+        <input type="radio" name="flightOptions" value="Qatar" />
+      </div>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
